@@ -1,10 +1,30 @@
 @import url("https://use.typekit.net/gpf0ejg.css");
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+:root {
+    --font: 10px;
+}
+
+a,p {
+    font-family: "Lora", serif;
+}
+
+h2 {
+    color: whitesmoke;
+}
 
 body {
     margin: 0;
     border: solid 0.5vw #734014;
     background: radial-gradient(closest-side, #C36F09, #C36F09, #7B2D26);
+    display: flex;
+    flex-direction: column;
+}
+
+#myName {
+    font-size: calc(var(--font) * 8);
 }
 
 .topSection {
@@ -25,7 +45,9 @@ body {
 .topSectionNH {
     background-color: #466060;
     font-family: "the-seasons", sans-serif;
+    font-style: italic;
     font-weight: 100;
+    font-size: calc(var(--font) * 3);
     color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -33,6 +55,8 @@ body {
     justify-content: center;
     text-decoration: underline 1.5px;
     height: 25vh;
+    border: 5vw solid transparent;
+    border-image: url(/images/leafBorder.png) 140 round;
 }
 
 .homeImage {
@@ -52,6 +76,56 @@ body {
     align-items: center;
 }
 
+#fullResume {
+    width: 85vw;
+    align-self: center;
+    display: flex; 
+    height: 200vh;
+}
+
+#logo {
+    border: white solid 10px;
+    border-radius: 100rem;
+    width: 75%;
+    align-self: center;
+}
+
+#leftResume {
+    background-color: #163853;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
 header {
     background-color: #F2C88C;
+}
+
+
+.content {
+    border: 5vw solid transparent;
+    border-image: url(/images/leafBorder.png) 140 round;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactLinks {
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw
+}
+
+#contactBird {
+    display: flex;
+}
+
+.contacts {
+    width: 5vw;
+}
+
+#bird {
+    width: 40vw;
+    align-self: flex-end;
+    margin-right: -5vw;
 }

@@ -7,29 +7,36 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/portfolio.html">My Portfolio</a>
-        <a href="/about.html">About Me</a>
-        <a href="/resume.html">My Resume</a>
-        <a href="/contact.html">Contact Me</a>
-    </nav>
     <header>
-        <h1>Contact Me</h1>
+        <nav>
+            <a href="/portfolio.html">My Portfolio</a>
+            <a href="/about.html">About Me</a>
+            <a href="/resume.html">My Resume</a>
+            <a href="/contact.html">Contact Me</a>
+        </nav>
     </header>
-    <section>
-        <h2>Thank You</h2>
-        <p>Thank you for taking the time to look at my website. I hope you have enjoyed it. If you would like to contact me about job opportunities, you may email me at the email below or contact me through LinkedIn. The type of work I am looking for is listed below.</p>
+    <section class="topSectionNH">
+        <h1 class="normalHeading">Contact Me</h1>
     </section>
-    <section>
+    <div class="content">
+        <section>
+            <h2>Thank You</h2>
+            <p>Thank you for taking the time to look at my website. I hope you have enjoyed it. If you would like to contact me about job opportunities, you may email me at the email below or contact me through LinkedIn. The type of work I am looking for is listed below.</p>
+        </section>
         <h2>Contact Links</h2>
-        <a href="mailto:okolbert946@gmail.com?subject=Job%20Opportunity&body=placeholder"><img src="/images/gmailIcon.png"></a>
-        <a href="https://www.linkedin.com/in/owen-kolbert-553902363/"><img src="/images/LinkedIn.png"></a>
-    </section>
-    <section>
-        <h2>Preferred Work (At this time):</h2>
-        <ul>
-            <li>None</li>
-        </ul>
-    </section>
+        <div id="contactBird">
+            <section id="contactLinks">
+                <a href="mailto:okolbert946@gmail.com?subject=Job%20Opportunity&body=placeholder" class="contacts"><img src="/images/gmailIcon.png" class="contacts"></a>
+                <a href="https://www.linkedin.com/in/owen-kolbert-553902363/" class="contacts"><img src="/images/LinkedIn.png" class="contacts"></a>
+            </section>
+            <img src="/images/birdOnBranch.png" alt="A bird on a branch." id="bird">
+        </div>
+        <section>
+            <h2>Preferred Work (At this time):</h2>
+            <ul>
+                <li>None</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
