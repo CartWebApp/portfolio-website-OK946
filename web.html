@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/portfolio.html">My Portfolio</a>
-        <a href="/about.html">About Me</a>
-        <a href="/resume.html">My Resume</a>
-        <a href="/contact.html">Contact Me</a>
-    </nav>
     <header>
-        <h1 class="normalHeading">Web / Programming Work</h1>
+        <nav>
+            <li class="hoverer"><a class="button" id="main-drop" href="/portfolio.html">Portfolio</a>
+                <ul class="dropdown">
+                    <li><a class="button" href="/web.html">Web Work</a></li>
+                    <li><a class="button" href="/art.html">Art / Photos</a></li>
+                    <li><a class="button" href="/writing.html">Writing</a></li>
+                </ul>
+            </li>
+            <a href="/about.html">About</a>
+            <a href="/index.html"><img src="/images/home.png" id="house" alt="A small picture of a home."></a>
+            <a href="/resume.html">Resume</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
     </header>
+    <section class="topSectionNH">
+        <h1 class="normalHeading">Web / Programming</h1>
+    </section>
     <p>Below you will see a collection of my websites and interactive programming projects. There are also links to each website so you can check them out. They are in order from oldest at the top and newest towards the bottom.</p>
     <section>
         <a href="https://smart-home-webpages.netlify.app/"><img src="/images/smartHome.png"></a>
@@ -34,5 +43,6 @@
         <a href="https://finalhorseheist.netlify.app/"><img src="/images/finalHorse.png"></a>
         <p>This game was created for a school project as our final test of JavaScript for the year. I worked on this along with a partner to create a humourous game that isn't meant to be taken too seriously. I did a majority of the JavaScript for this project, allowing me to experiment with the systems and grow my skills. I was able to get far ahead of my other classmates during this project and I truly had fun while creating it. This enjoyability in a large coding project made me a much harder worker.</p>
     </section>
+    <script src="/script.js"></script>
 </body>
 </html>

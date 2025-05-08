@@ -7,15 +7,25 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/portfolio.html">My Portfolio</a>
-        <a href="/about.html">About Me</a>
-        <a href="/resume.html">My Resume</a>
-        <a href="/contact.html">Contact Me</a>
-    </nav>
     <header>
-        <h1 class="normalHeading">About Me</h1>
+        <nav>
+            <li class="hoverer"><a class="button" id="main-drop" href="/portfolio.html">Portfolio</a>
+                <ul class="dropdown">
+                    <li><a class="button" href="/web.html">Web Work</a></li>
+                    <li><a class="button" href="/art.html">Art / Photos</a></li>
+                    <li><a class="button" href="/writing.html">Writing</a></li>
+                </ul>
+            </li>
+
+            <a href="/about.html">About</a>
+            <a href="/index.html"><img src="/images/home.png" id="house" alt="A small picture of a home."></a>
+            <a href="/resume.html">Resume</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
     </header>
+    <section class="topSectionNH">
+        <h1 class="normalHeading">About</h1>
+    </section>
     <section>
         <img src="/images/myself.jpg">
         <div>
@@ -31,5 +41,6 @@
         <h2>Awards/Accomplishments</h2>
         <p>I have maintained an above 4.00 GPA since my sophomore year of high school and work hard to achieve good grades in my classes. As a perfectionist, I rarely am happy with myself unless I get A’s in a class, so this has led me to only having two B’s in all my classes I have taken in high school. </p> 
     </section>
+    <script src="/script.js"></script>
 </body>
 </html>

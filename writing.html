@@ -7,15 +7,25 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/portfolio.html">My Portfolio</a>
-        <a href="/about.html">About Me</a>
-        <a href="/resume.html">My Resume</a>
-        <a href="/contact.html">Contact Me</a>
-    </nav>
     <header>
-        <h1 class="normalHeading">Writing Samples</h1>
+        <nav>
+            <li class="hoverer"><a class="button" id="main-drop" href="/portfolio.html">Portfolio</a>
+                <ul class="dropdown">
+                    <li><a class="button" href="/web.html">Web Work</a></li>
+                    <li><a class="button" href="/art.html">Art / Photos</a></li>
+                    <li><a class="button" href="/writing.html">Writing</a></li>
+                </ul>
+            </li>
+
+            <a href="/about.html">About</a>
+            <a href="/index.html"><img src="/images/home.png" id="house" alt="A small picture of a home."></a>
+            <a href="/resume.html">Resume</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
     </header>
+    <section class="topSectionNH">
+        <h1 class="normalHeading">Writing Samples</h1>
+    </section>
     <p>Below are some of my writing samples I have created over the years that best show my writing ability.</p>
     <div>
         <a href="https://docs.google.com/document/d/11VUxomHMvTdoLWguUs827G7nRCGRutCcZxSVok3BT-4/edit?tab=t.0"><img src="/images/sample1.png"></a>
@@ -24,6 +34,6 @@
 
 
 
-
+    <script src="/script.js"></script>
 </body>
 </html>
