@@ -1,6 +1,5 @@
-document.getElementById(`bird`).addEventListener(`click`, () => {
-    playAudio(`/audio/bird.mp3`)
-})
+document.getElementById(`bird`).addEventListener(`click`, playAudio(`/audio/bird.mp3`))
+
 
 
 function playAudio(audio) {

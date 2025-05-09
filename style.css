@@ -11,6 +11,10 @@ a,p {
     font-family: "Lora", serif;
 }
 
+b {
+    font-family: nowBold;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -23,6 +27,15 @@ a {
 header {
     display: flex;
     flex-direction: column;
+    background-color: #F2C88C;
+}
+
+footer {
+    display: flex;
+    background-color: #F2C88C;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em 0 1em;
 }
 
 nav {
@@ -42,6 +55,8 @@ nav a {
 
 h2 {
     color: whitesmoke;
+    font-family: "the-seasons", sans-serif;
+    font-size: calc(var(--font) * 3);
 }
 
 body {
@@ -55,6 +70,26 @@ body {
 
 #myName {
     font-size: calc(var(--font) * 8);
+}
+
+#thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+#thanks p {
+    color: whitesmoke;
+    width: 55vw;
+}
+
+#thanks h2 {
+    margin-bottom: 0.3em;
+}
+
+#idealWork {
+    color: whitesmoke;
 }
 
 .topSection {
@@ -113,17 +148,28 @@ body {
 }
 
 #fullResume {
-    width: 85vw;
+    margin-top: 1em;
+    width: 70vw;
     align-self: center;
     display: flex; 
-    height: 200vh;
+    height: calc(fit-content); 
+    background-color: white;
+    border: 1px black solid;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.50);
 }
 
 #logo {
-    border: white solid 10px;
+    border: white solid 0.5vw;
     border-radius: 100rem;
-    width: 75%;
+    width: 12vw;
     align-self: center;
+    margin-top: 5vh;
+}
+
+#resumeName {
+    color: #545454;
+    font-family: now;
+    font-size: calc(var(--font) * 6);
 }
 
 #leftResume {
@@ -134,10 +180,20 @@ body {
     width: 40%;
 }
 
-header {
-    background-color: #F2C88C;
+#rightResume {
+    width: 100%;
+    padding: 1em;
 }
 
+#resumeLink {
+    background-color: #F2C88C;
+    padding: 1em;
+    text-align: center;
+    border-radius: 1rem;
+    max-width: 30vw;
+    align-self: center;
+    margin-top: 5vh;
+}
 
 .content {
     border: 5vw solid transparent;
@@ -146,9 +202,17 @@ header {
     flex-direction: column;
 }
 
+#notes {
+    align-self: flex-start;
+    margin-right: -20vw;
+    transform: rotate(29deg);
+
+}
+
 #contactLinks {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
     width: 60vw
 }
 
@@ -156,8 +220,20 @@ header {
     display: flex;
 }
 
+.contactBack {
+    background-image: url(/images/sign.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12vw;
+    height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.50);
+}
+
 .contacts {
-    width: 5vw;
+    width: 8vw;
 }
 
 #bird {
@@ -192,6 +268,7 @@ header {
     height: 0;
     box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.50);
     transition: padding 800ms, height 800ms ease-out;
+    margin-top: 3vh;
     margin-left: 4.2vw ;
     list-style: none;
 }
@@ -206,6 +283,71 @@ header {
     padding: 1.5em 0.5em 1em;
 }
 
+#topAbout {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#meImg {
+    max-height: 50vh;
+    align-self: center;
+    margin-right: 5vw;
+    margin-left: 2vw;
+    border: 1px black solid;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.50);
+}
+
+.aboutDesc {
+    align-self: center;
+    color: whitesmoke;
+    width: 60vw;
+    margin-top: 10vh;
+}
+
+#hobby {
+    color: whitesmoke;
+    width: 60%;
+}
+
+#allArt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%
+}
+
+.artGroup {
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.art {
+    width: 40vw;
+    object-fit: fill;
+}
+
+.topDescription {
+    color: whitesmoke;
+    align-self: center;
+    font-size: calc(var(--font) * 2);
+}
+
+@font-face {
+    font-family: now;
+    src: url(/resumeFonts/Now-Regular.otf);
+}
+
+@font-face {
+    font-family: nowBold;
+    src: url(/resumeFonts/Now-Bold.otf);
+}
 
 
 @media screen and (max-width: 610px) {
