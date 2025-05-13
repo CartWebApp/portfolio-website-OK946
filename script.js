@@ -3,30 +3,27 @@ let root = document.querySelector(':root');
 if(document.getElementById(`bird`)){document.getElementById(`bird`).addEventListener(`click`, () => playAudio(`/audio/bird.mp3`))}
 
 if(document.getElementById(`myName`)){
-  webOn();
-  resOn();
-  aboOn();
+  document.getElementById(`homeWeb`).addEventListener(`mouseover`, webOn);
+  document.getElementById(`homeRes`).addEventListener(`mouseover`, resOn);
+  document.getElementById(`homeAbo`).addEventListener(`mouseover`,aboOn)
 }
 
 function webOn() {
-  document.getElementById(`test`).addEventListener(`click`,() =>{
-    document.getElementById(`homeWeb`).classList.toggle(`moveOne`);
-    root.style.setProperty('--homeWeb', '1');
-  });
+  document.getElementById(`homeWeb`).classList.toggle(`moveOne`);
+  root.style.setProperty('--homeWeb', '1');
+  document.getElementById(`homeWeb`).removeEventListener(`mouseover`, webOn);
 }
 
 function resOn() {
-  document.getElementById(`test`).addEventListener(`click`,() =>{
-    document.getElementById(`homeRes`).classList.toggle(`moveOne`);
-    root.style.setProperty('--homeRes', '1');
-  })
+  document.getElementById(`homeRes`).classList.toggle(`moveOne`);
+  root.style.setProperty('--homeRes', '1');
+  document.getElementById(`homeRes`).removeEventListener(`mouseover`, resOn);
 }
 
 function aboOn() {
-  document.getElementById(`test`).addEventListener(`click`,() =>{
-    document.getElementById(`homeAbo`).classList.toggle(`moveOne`);
-    root.style.setProperty('--homeAbo', '1');
-  })
+  document.getElementById(`homeAbo`).classList.toggle(`moveOne`);
+  root.style.setProperty('--homeAbo', '1');
+  document.getElementById(`homeAbo`).removeEventListener(`mouseover`,aboOn)
 }
 
 
