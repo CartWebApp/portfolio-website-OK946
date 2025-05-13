@@ -1,10 +1,34 @@
+let root = document.querySelector(':root');
+
 if(document.getElementById(`bird`)){document.getElementById(`bird`).addEventListener(`click`, () => playAudio(`/audio/bird.mp3`))}
 
 if(document.getElementById(`myName`)){
-  document.getElementById(`homeAbo`).addEventListener(`wheel`,() =>{
-    setInterval(()=>document.getElementById(`homeAbo`).style.opacity = 1, 5)
+  webOn();
+  resOn();
+  aboOn();
+}
+
+function webOn() {
+  document.getElementById(`test`).addEventListener(`click`,() =>{
+    document.getElementById(`homeWeb`).classList.toggle(`moveOne`);
+    root.style.setProperty('--homeWeb', '1');
+  });
+}
+
+function resOn() {
+  document.getElementById(`test`).addEventListener(`click`,() =>{
+    document.getElementById(`homeRes`).classList.toggle(`moveOne`);
+    root.style.setProperty('--homeRes', '1');
   })
 }
+
+function aboOn() {
+  document.getElementById(`test`).addEventListener(`click`,() =>{
+    document.getElementById(`homeAbo`).classList.toggle(`moveOne`);
+    root.style.setProperty('--homeAbo', '1');
+  })
+}
+
 
 function playAudio(audio) {
   let sound = new Audio(audio);
@@ -26,9 +50,6 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function moveWeb(){
-
-}
 
 function showSlides(n) {
     let i;
